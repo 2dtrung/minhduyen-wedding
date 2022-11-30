@@ -3,6 +3,9 @@ import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
 import { MenuIcon, Nav, NavbarContainer, NavItem, NavLink, NavLogo, NavMenu, NavBtn, NavBtnLink } from './NavbarElements';
+import Logo from '../../images/minhduyen-logo.png';
+
+import * as Styled from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -29,28 +32,31 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to='/' onClick={toggleHome}>
-              logo
+            <Styled.Image src={Logo} alt="logo"/>
           </NavLogo>
             <MenuIcon onClick={toggle}>
               <FaBars />
             </MenuIcon>
             <NavMenu>
               <NavItem>
-                <NavLink to='about' smooth={true} duration={500} spy={true} exact='true' offset={-80} >About</NavLink>
+                <NavLink to='home' smooth={true} duration={500} spy={true} exact='true' offset={-80} >Trang chủ</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to='discover' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Discover</NavLink>
+                <NavLink to='celebrate' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Về chúng mình</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to='services' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Services</NavLink>
+                <NavLink to='memory' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Câu chuyện</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to='signup' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Sign Up</NavLink>
+                <NavLink to='moments' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Bộ sưu tập</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink to='form' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Xác nhận</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink to='information' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Địa chỉ</NavLink>
               </NavItem>
             </NavMenu>
-            <NavBtn>
-              <NavBtnLink to="/signin">Sign In</NavBtnLink>
-            </NavBtn>
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>

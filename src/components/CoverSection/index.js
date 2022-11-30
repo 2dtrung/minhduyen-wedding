@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
-import Video from '../../videos/video.mp4';
+import moment from "moment";
+import Countdown from 'react-countdown';
 import { CoverContainer, CoverBg, VideoBg, CoverContent, CoverH1, CoverP, CoverBtnWrapper, ArrowForward, ArrowRight } from './CoverElements';
 import { Button } from '../ButtonElements';
+
+
+import * as Styled from './CoverElements';
 
 const CoverSection = () => {
   const [hover, setHover] = useState(false);
@@ -11,18 +15,63 @@ const CoverSection = () => {
   };
 
   return (
-    <CoverContainer>
-      <CoverBg>
+    <CoverContainer id="home">
+      {/* <CoverBg>
         <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
-      </CoverBg>
+      </CoverBg> */}
       <CoverContent>
-        <CoverH1>Awesome Title Goes Here</CoverH1>
-        <CoverP>Sign up for a new account today and consume awesome features from our website.</CoverP>
-        <CoverBtnWrapper>
-          <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
-            Get started {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
-        </CoverBtnWrapper>
+        <Styled.Title>Save The Date</Styled.Title>
+        <Styled.Description>Chúng mình sẽ cưới nhau vào ngày “3/12/2022”</Styled.Description>
+        <Styled.Timer>
+          <Styled.Month>
+            <Styled.Number>{moment("20221203", "YYYYMMDD").diff(moment(), 'months')}</Styled.Number>
+            <Styled.Time>Tháng</Styled.Time>
+          </Styled.Month>
+          <Styled.Month>
+            <Styled.Number>
+            <Countdown 
+                date={moment("20221203", "YYYYMMDD")}
+                renderer={({days}) => {
+                  return days;
+                }}
+              />
+            </Styled.Number>
+            <Styled.Time>Ngày</Styled.Time>
+          </Styled.Month>
+          <Styled.Month>
+            <Styled.Number>
+            <Countdown 
+                date={moment("20221203", "YYYYMMDD")}
+                renderer={({hours}) => {
+                  return hours;
+                }}
+              />
+            </Styled.Number>
+            <Styled.Time>Giờ</Styled.Time>
+          </Styled.Month>
+          <Styled.Month>
+            <Styled.Number>
+            <Countdown 
+                date={moment("20221203", "YYYYMMDD")}
+                renderer={({minutes}) => {
+                  return minutes;
+                }}
+              />
+            </Styled.Number>
+            <Styled.Time>Phút</Styled.Time>
+          </Styled.Month>
+          <Styled.Month>
+            <Styled.Number>
+              <Countdown 
+                date={moment("20221203", "YYYYMMDD")}
+                renderer={({seconds}) => {
+                  return seconds;
+                }}
+              />
+            </Styled.Number>
+            <Styled.Time>Giây</Styled.Time>
+          </Styled.Month>
+        </Styled.Timer>
       </CoverContent>
     </CoverContainer>
   );

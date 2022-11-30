@@ -4,3 +4,24 @@
   padding: 0;
   font-family: 'Encode Sans Expanded', sans-serif;
 }
+
+@font-face {
+  font-family: 'Donalia';
+  src: local('Donalia'), url(./fonts/Donalia.woff) format('woff');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: local('Jost'), url(./fonts/Jost.woff) format('woff');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: local('Josefin Sans'), url(./fonts/Josefin.ttf) format('woff');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}

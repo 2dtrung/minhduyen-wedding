@@ -6,6 +6,14 @@ import { aboutObj, discoverObj, signupObj } from '../components/InfoSection/Data
 import Navbar from '../components/Navbar';
 import Services from '../components/Services';
 import Sidebar from '../components/Sidebar';
+import Memories from '../components/Memories';
+import CelebrateOurLove from '../components/CelebrateOurLove';
+import ConfirmForm from '../components/ConfirmForm';
+import SweetMoment from '../components/SweetMoment';
+import WeddingInformation from '../components/WeddingInformation';
+import FooterCustom from '../components/FooterCustom';
+import About from '../components/About';
+import '../fonts/animation.scss'
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,11 +27,13 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <CoverSection />
-      <InfoSection {...aboutObj} />
-      <InfoSection {...discoverObj} />
-      <InfoSection {...signupObj} />
-      <Services />
-      <Footer />
+      <About />
+      <Memories />
+      <CelebrateOurLove />
+      <ConfirmForm />
+      <SweetMoment />
+      <WeddingInformation />
+      <FooterCustom />
     </>
   );
 };

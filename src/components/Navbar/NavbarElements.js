@@ -3,9 +3,9 @@ import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};;
-  height: 80px;
-  margin-top: -80px;
+  background: #738EA5;
+  height: 70px;
+  margin-top: -70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,11 +22,11 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 70px;
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1100px;
+  max-width: 1164px;
 `;
 
 export const NavLogo = styled(LinkR)`
@@ -42,29 +42,28 @@ export const NavLogo = styled(LinkR)`
 `;
 
 export const MenuIcon = styled.div`
-  display: none;
+  display: block;
+  position: absolute;
+  top: -4px;
+  right: 0;
+  transform: translate(-100%, 60%);
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff;
 
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: #fff;
+  @media screen and (min-width: 1200px) {
+    display: none;
   }
 `;
 
 export const NavMenu = styled.ul`
-  display: flex;
-  align-items: center;
-  list-style: none;
-  text-align: center;
-  /* margin-right: -22px; */
+  display: none;
 
-  @media screen and (max-width: 768px) {
-    display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
   }
 `;
 
@@ -73,16 +72,22 @@ export const NavItem = styled.li`
 `;
 
 export const NavLink = styled(LinkS)`
+  font-family: 'Donalia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
   color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
-  height: 100%;
+  height: 70%;
+  margin-top: 10px;
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid white;
   }
 `;
 
@@ -111,5 +116,14 @@ export const NavBtnLink = styled(LinkR)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
+  }
+`;
+
+export const Image = styled.img`
+  width: 60px;
+  height: 60px;
+
+  @media screen and (min-width: 768px) {
+    
   }
 `;

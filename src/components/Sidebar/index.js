@@ -9,14 +9,13 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about" onClick={toggle}>About</SidebarLink>
-          <SidebarLink to="discover" onClick={toggle}>Discover</SidebarLink>
-          <SidebarLink to="services" onClick={toggle}>Services</SidebarLink>
-          <SidebarLink to="signup" onClick={toggle}>Sign Up</SidebarLink>
+          <SidebarLink to="home" onClick={toggle}>Trang chủ</SidebarLink>
+          <SidebarLink to="celebrate" onClick={toggle}>Về chúng mình</SidebarLink>
+          <SidebarLink to="services" onClick={toggle}>Câu chuyện</SidebarLink>
+          <SidebarLink to="moments" onClick={toggle}>Bộ sưu tập</SidebarLink>
+          <SidebarLink to="form" onClick={toggle}>Xác nhận</SidebarLink>
+          <SidebarLink to="information" onClick={toggle}>Địa chỉ</SidebarLink>
         </SidebarMenu>
-        <SideBtnWrap>
-          <SidebarRoute to="/signin">Sign In</SidebarRoute>
-        </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
   );
