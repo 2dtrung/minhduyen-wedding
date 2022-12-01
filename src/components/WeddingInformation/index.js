@@ -18,9 +18,6 @@ const WeddingInformation = () => {
           <Styled.Decoration src={Decoration} alt="decoration" />
         </Styled.DecorationWrapper>
         <Styled.Text
-          className="wow bounceIn"
-          data-wow-duration="1s"
-          data-wow-delay="0.25s"
         >
           When & Where
         </Styled.Text>
@@ -28,8 +25,13 @@ const WeddingInformation = () => {
           <Styled.DecorationLine src={DecorationLine} alt="decoration-line" />
         </Styled.DecorationLineWrapper>
         <Styled.InformationWrapper>
-          {INFORMATION_LIST.map(({title, time, address, phone, map}) => (
-            <Styled.InformationItem key={title}>
+          {INFORMATION_LIST.map(({title, time, address, phone, map}, index) => (
+            <Styled.InformationItem
+              key={title}
+              className="wow fadeInUp"
+              data-wow-duration="2s"
+              data-wow-delay={`0.${index + 1}5s`}
+            >
             <Styled.ContentWrapper>
               <Styled.Title>{title}</Styled.Title>
               <Styled.Time>{time}</Styled.Time>

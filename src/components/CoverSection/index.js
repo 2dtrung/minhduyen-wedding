@@ -20,14 +20,34 @@ const CoverSection = () => {
         <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
       </CoverBg> */}
       <CoverContent>
-        <Styled.Title>Save The Date</Styled.Title>
-        <Styled.Description>Chúng mình sẽ về chung nhà vào ngày “4/12/2022”</Styled.Description>
+        <Styled.Title
+          className="wow bounceIn"
+          data-wow-duration="1s"
+          data-wow-delay="0.25s"
+        >
+          Save The Date
+        </Styled.Title>
+        <Styled.Description
+          className="wow bounceIn"
+          data-wow-duration="1s"
+          data-wow-delay="0.25s"
+        >
+          Chúng mình sẽ về chung nhà vào ngày “4/12/2022”
+        </Styled.Description>
         <Styled.Timer>
-          <Styled.Month>
+          <Styled.Month
+            className="wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.15s"
+          >
             <Styled.Number>{moment("20221204", "YYYYMMDD").diff(moment(), 'months')}</Styled.Number>
             <Styled.Time>Tháng</Styled.Time>
           </Styled.Month>
-          <Styled.Month>
+          <Styled.Month
+            className="wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.25s"
+          >
             <Styled.Number>
             <Countdown 
                 date={moment("20221204", "YYYYMMDD")}
@@ -38,7 +58,11 @@ const CoverSection = () => {
             </Styled.Number>
             <Styled.Time>Ngày</Styled.Time>
           </Styled.Month>
-          <Styled.Month>
+          <Styled.Month
+            className="wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.35s"
+          >
             <Styled.Number>
             <Countdown 
                 date={moment("20221204", "YYYYMMDD")}
@@ -49,7 +73,11 @@ const CoverSection = () => {
             </Styled.Number>
             <Styled.Time>Giờ</Styled.Time>
           </Styled.Month>
-          <Styled.Month>
+          <Styled.Month
+            className="wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.45s"
+          >
             <Styled.Number>
             <Countdown 
                 date={moment("20221204", "YYYYMMDD")}
@@ -60,7 +88,11 @@ const CoverSection = () => {
             </Styled.Number>
             <Styled.Time>Phút</Styled.Time>
           </Styled.Month>
-          <Styled.Month>
+          <Styled.Month
+            className="wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.55s"
+          >
             <Styled.Number>
               <Countdown 
                 date={moment("20221204", "YYYYMMDD")}

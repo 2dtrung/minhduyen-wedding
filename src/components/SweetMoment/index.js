@@ -45,9 +45,6 @@ const SweetMoment = () => {
           <Styled.Decoration src={Decoration} alt="decoration" />
         </Styled.DecorationWrapper>
         <Styled.Text 
-          className="wow bounceIn"
-          data-wow-duration="1s"
-          data-wow-delay="0.25s"
         >
           Sweet Captured Moments
         </Styled.Text>
@@ -86,31 +83,85 @@ const SweetMoment = () => {
         <Styled.PictureWrapperTablet>
           <Fancybox>
             <Styled.ImageWrapperTablet1 data-fancybox="gallery" href={SweetView1}>
-              <Styled.ImageTablet1 src={Sweet1Tablet} alt="sweet1"/>
+              <Styled.ImageTablet1
+               src={Sweet1Tablet} 
+               alt="sweet1"
+               className="wow fadeInUp"
+               data-wow-duration="1s"
+               data-wow-delay="0.25s"
+              />
             </Styled.ImageWrapperTablet1>
             <Styled.ImageWrapperTablet2 data-fancybox="gallery" href={SweetView2}>
-              <Styled.ImageTablet2 src={Sweet2Tablet} alt="sweet2" />
+              <Styled.ImageTablet2 
+                src={Sweet2Tablet} 
+                alt="sweet2" 
+                className="wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.45s"
+              />
             </Styled.ImageWrapperTablet2>
             <Styled.ImageWrapperTablet3 data-fancybox="gallery" href={SweetView3}>
-              <Styled.ImageTablet3 src={Sweet3Tablet} alt="sweet3" />
+              <Styled.ImageTablet3 
+                src={Sweet3Tablet} 
+                alt="sweet3" 
+                className="wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.65s"
+              />
             </Styled.ImageWrapperTablet3>
             <Styled.ImageWrapperTablet4 data-fancybox="gallery" href={SweetView4}>
-              <Styled.ImageTablet4 src={Sweet4Tablet} alt="sweet4" />
+              <Styled.ImageTablet4 
+                src={Sweet4Tablet} 
+                alt="sweet4" 
+                className="wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.25s"
+              />
             </Styled.ImageWrapperTablet4>
             <Styled.ImageWrapperTablet5 data-fancybox="gallery" href={SweetView5}>
-              <Styled.ImageTablet5 src={Sweet5Tablet} alt="sweet5" />
+              <Styled.ImageTablet5 
+                src={Sweet5Tablet} 
+                alt="sweet5" 
+                className="wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.45s"
+              />
             </Styled.ImageWrapperTablet5>
             <Styled.ImageWrapperTablet6 data-fancybox="gallery" href={SweetView6}>
-              <Styled.ImageTablet6 src={Sweet6Tablet} alt="sweet6" />
+              <Styled.ImageTablet6 
+                src={Sweet6Tablet} 
+                alt="sweet6" 
+                className="wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.65s"
+              />
             </Styled.ImageWrapperTablet6>
             <Styled.ImageWrapperTablet7 data-fancybox="gallery" href={SweetView7}>
-              <Styled.ImageTablet7 src={Sweet7Tablet} alt="sweet7" />
+              <Styled.ImageTablet7 
+                src={Sweet7Tablet} 
+                alt="sweet7" 
+                className="wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.25s"
+              />
             </Styled.ImageWrapperTablet7>
             <Styled.ImageWrapperTablet8 data-fancybox="gallery" href={SweetView8}>
-              <Styled.ImageTablet8 src={Sweet8Tablet} alt="sweet8" />
+              <Styled.ImageTablet8 
+                src={Sweet8Tablet} 
+                alt="sweet8" 
+                className="wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.45s"
+              />
             </Styled.ImageWrapperTablet8>
             <Styled.ImageWrapperTablet9 data-fancybox="gallery" href={SweetView9}>
-              <Styled.ImageTablet9 src={Sweet9Tablet} alt="sweet9" />
+              <Styled.ImageTablet9 
+                src={Sweet9Tablet} 
+                alt="sweet9" 
+                className="wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.65s"
+              />
             </Styled.ImageWrapperTablet9>
           </Fancybox>
         </Styled.PictureWrapperTablet>
