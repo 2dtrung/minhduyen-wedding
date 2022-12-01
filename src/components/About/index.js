@@ -55,7 +55,7 @@ const About = () => {
             <Styled.SheAvatar src={SheAvatar} alt="avatar" />
           </Styled.SheAvatarWrapper>
           <Styled.SheName>Đỗ Thị Mỹ Duyên</Styled.SheName>
-          <Styled.SheDescription>Cô gái sinh vào tháng 12, thật trùng hợp là trước đám cưới 1 ngày chính là sinh nhật. Đam mê sự tỉ mỉ, cẩn thận, ngoài ra còn là một người chị, một người con, người vợ dễ thương</Styled.SheDescription>
+          <Styled.SheDescription>Cô gái sinh vào tháng 12, thật trùng hợp là trước đám cưới 1 ngày chính là sinh nhật. Đam mê thiết kế, luôn thích sự tỉ mỉ và cẩn thận.</Styled.SheDescription>
           <Styled.SocialWrapper $reverse={true}>
             <Styled.IconWrapper target="_blank" href="https://www.facebook.com/profile.php?id=100006160780558"> 
               <Styled.Icon src={Facebook} alt="fb" />

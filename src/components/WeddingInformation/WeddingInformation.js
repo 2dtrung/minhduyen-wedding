@@ -188,7 +188,7 @@ export const MapWrapper= styled.div`
 
 export const Map = styled.a`
   margin: 0 auto;
-  font-family: 'Jost';
+  font-family: 'Josefin sans';
   font-style: normal;
   font-weight: 700;
   font-size: 15px;

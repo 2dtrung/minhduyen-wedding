@@ -18,7 +18,6 @@ export const Wrapper = styled.div`
     margin: 0 auto;
     padding: 108px 18px 120px;
     position: relative;
-    z-index: -1;
   }
 `;
 
@@ -34,8 +33,6 @@ export const BlueBackground = styled.div`
 
   @media screen and (min-width: 1200px) {
     padding: 10px 12px;
-    position: relative;
-    z-index: -1;
     width: 700px;
     margin: 0 auto;
   }
