@@ -22,6 +22,6 @@ export const ITEM_LIST = [
     {
         image: Memory4,
         title: 'NGÀY HẠNH PHÚC',
-        description: 'Vậy là câu chuyện của chúng mình sẽ được viết tiếp bằng ngày hạnh phúc nhất đời chúng mình, ngày 3/2/2022 tới đây. Ngoài ra chúng mình vẫn còn một buổi lễ Báo Hỷ được tổ chức trên Sài Gòn nên bạn đừng lo nếu không kịp tham dự ngày 3/2 nhé. Hy vọng bạn có thể đến tham dự và chung vui cùng chúng mình!',
+        description: 'Vậy là câu chuyện của chúng mình sẽ được viết tiếp bằng ngày hạnh phúc nhất đời chúng mình, ngày 4/12/2022 tới đây. Ngoài ra chúng mình vẫn còn một buổi lễ Báo Hỷ được tổ chức trên Sài Gòn nên bạn đừng lo nếu không kịp tham dự ngày 4/12 nhé. Hy vọng bạn có thể đến tham dự và chung vui cùng chúng mình!',
     }
 ]

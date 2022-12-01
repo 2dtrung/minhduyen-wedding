@@ -21,16 +21,16 @@ const CoverSection = () => {
       </CoverBg> */}
       <CoverContent>
         <Styled.Title>Save The Date</Styled.Title>
-        <Styled.Description>Chúng mình sẽ cưới nhau vào ngày “3/12/2022”</Styled.Description>
+        <Styled.Description>Chúng mình sẽ về chung nhà vào ngày “4/12/2022”</Styled.Description>
         <Styled.Timer>
           <Styled.Month>
-            <Styled.Number>{moment("20221203", "YYYYMMDD").diff(moment(), 'months')}</Styled.Number>
+            <Styled.Number>{moment("20221204", "YYYYMMDD").diff(moment(), 'months')}</Styled.Number>
             <Styled.Time>Tháng</Styled.Time>
           </Styled.Month>
           <Styled.Month>
             <Styled.Number>
             <Countdown 
-                date={moment("20221203", "YYYYMMDD")}
+                date={moment("20221204", "YYYYMMDD")}
                 renderer={({days}) => {
                   return days;
                 }}
@@ -41,7 +41,7 @@ const CoverSection = () => {
           <Styled.Month>
             <Styled.Number>
             <Countdown 
-                date={moment("20221203", "YYYYMMDD")}
+                date={moment("20221204", "YYYYMMDD")}
                 renderer={({hours}) => {
                   return hours;
                 }}
@@ -52,7 +52,7 @@ const CoverSection = () => {
           <Styled.Month>
             <Styled.Number>
             <Countdown 
-                date={moment("20221203", "YYYYMMDD")}
+                date={moment("20221204", "YYYYMMDD")}
                 renderer={({minutes}) => {
                   return minutes;
                 }}
@@ -63,7 +63,7 @@ const CoverSection = () => {
           <Styled.Month>
             <Styled.Number>
               <Countdown 
-                date={moment("20221203", "YYYYMMDD")}
+                date={moment("20221204", "YYYYMMDD")}
                 renderer={({seconds}) => {
                   return seconds;
                 }}
