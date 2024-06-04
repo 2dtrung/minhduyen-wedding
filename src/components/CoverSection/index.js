@@ -40,7 +40,7 @@ const CoverSection = () => {
             data-wow-duration="1s"
             data-wow-delay="0.15s"
           >
-            <Styled.Number>{moment("20221204", "YYYYMMDD").diff(moment(), 'months')}</Styled.Number>
+            <Styled.Number>0</Styled.Number>
             <Styled.Time>Tháng</Styled.Time>
           </Styled.Month>
           <Styled.Month
@@ -49,12 +49,7 @@ const CoverSection = () => {
             data-wow-delay="0.25s"
           >
             <Styled.Number>
-            <Countdown 
-                date={moment("20221204", "YYYYMMDD")}
-                renderer={({days}) => {
-                  return days;
-                }}
-              />
+            0
             </Styled.Number>
             <Styled.Time>Ngày</Styled.Time>
           </Styled.Month>
@@ -64,12 +59,7 @@ const CoverSection = () => {
             data-wow-delay="0.35s"
           >
             <Styled.Number>
-            <Countdown 
-                date={moment("20221204", "YYYYMMDD")}
-                renderer={({hours}) => {
-                  return hours;
-                }}
-              />
+            0
             </Styled.Number>
             <Styled.Time>Giờ</Styled.Time>
           </Styled.Month>
@@ -79,12 +69,7 @@ const CoverSection = () => {
             data-wow-delay="0.45s"
           >
             <Styled.Number>
-            <Countdown 
-                date={moment("20221204", "YYYYMMDD")}
-                renderer={({minutes}) => {
-                  return minutes;
-                }}
-              />
+            0
             </Styled.Number>
             <Styled.Time>Phút</Styled.Time>
           </Styled.Month>
@@ -94,12 +79,7 @@ const CoverSection = () => {
             data-wow-delay="0.55s"
           >
             <Styled.Number>
-              <Countdown 
-                date={moment("20221204", "YYYYMMDD")}
-                renderer={({seconds}) => {
-                  return seconds;
-                }}
-              />
+              0
             </Styled.Number>
             <Styled.Time>Giây</Styled.Time>
           </Styled.Month>
